@@ -27,10 +27,11 @@ export default function Template({
         {" "}
         {edges.map((edge) => {
           const { slug, topic } = edge.node.frontmatter;
-          return (
+          return (<div className="blog-post-topic">
             <Link key={slug} style={{ boxShadow: `none` }} to={`/${slug}`}>
               <p>{topic}</p>
             </Link>
+            </div>
           );
         })}
       </div>
