@@ -9,10 +9,9 @@ body {
 }
 
 .blog-post-topics {
-    width: 20%;
+    width: 15%;
 }
 
 .blog-post {
-    width: 65%;
-    margin: auto;
+    width: 45%;
 }

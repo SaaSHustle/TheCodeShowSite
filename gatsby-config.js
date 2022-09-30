@@ -43,6 +43,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "assets",
+        path: "./src/assets/",
+      },
+      __key: "assets",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "markdown-pages",
         path: "./src/markdown-pages",
       },
@@ -54,6 +62,12 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-highlight-code`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
           },
         ],
       },
